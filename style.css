@@ -1,0 +1,743 @@
+:root{
+    --FColor:wheat;
+    --EColor:white;
+    --loginColor:whitesmoke;
+    --FontColor:#f2a20b;
+    --Font2Color:#a53333;
+    --Row1Color:rgb(155, 153, 153);
+    --Row1BackColor:rgb(202, 202, 202);
+    --inputBackColor:rgb(233, 231, 231);
+    --Font3Color:#a53333;
+    --THColor:wheat;
+    --TDColor:yellow;
+
+    
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 454px) {
+    :root{
+        --Width:98%;
+        --FrWidth:35%;
+        --BWidth:35%;
+        --LWidth:35%;
+        --fontZ:14px;
+        --fontX:12px;
+        --fonty:12px;
+        --FontIcon:35px;
+        --Winput:90%;
+        --TMargin:10%;
+        --justify:unset;
+        --WithInputN:30px;
+        --WithInputT:50px;
+    }
+  }
+@media screen and (min-width: 455px)and (max-width: 650px)  {
+    :root{
+        --Width:97%;
+        --FrWidth:35%;
+        --BWidth:35%;
+        --LWidth:35%;
+        --fontZ:16px;
+        --fontX:14px;
+        --fonty:13px;
+        --FontIcon:38px;
+        --Winput:200px;
+        --TMargin:0px;
+        --justify:space-evenly;
+        --WithInputN:50px;
+        --WithInputT:70px;
+    }
+}
+
+@media screen and (min-width: 651px)and (max-width: 800px)  {
+    :root{
+        --Width:96%;
+        --FrWidth:40%;
+        --BWidth:35%;
+        --LWidth:35%;
+        --fontZ:18px;
+        --fontX:16px;
+        --fonty:14px;
+        --FontIcon:40px;
+        --Winput:48%;
+        --TMargin:0px;
+        --justify:space-evenly;
+        --WithInputN:70px;
+        --WithInputT:100px;
+    }
+}
+@media screen and (min-width: 801px)  {
+    :root{
+        --Width:95%;
+        --FrWidth:45%;
+        --BWidth:35%;
+        --LWidth:35%;
+        --fontZ:18px;
+        --fontX:16px;
+        --fonty:14px;
+        --FontIcon:50px;
+        --Winput:48%;
+        --TMargin:0px;
+        --justify:space-evenly;
+        --WithInputN:90px;
+        --WithInputT:120px;
+    }
+}
+.Column1{
+width: calc(100% - var(--WithInputT) + var(--WithInputN));
+}
+.Column2{
+width: calc(var(--WithInputN) - 2px);
+}
+.Column3{
+width: var(--WithInputN);
+}
+.Column4{
+width: calc(var(--WithInputN) + 2px);
+}
+.Column5{
+width: calc(var(--WithInputT) - 30px); 
+}
+.Column6{
+width: calc(var(--WithInputT) - 25px); 
+}
+
+@media print {
+    html{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    /* form{
+        height: 100% !important;
+        border: none !important;
+        padding: none !important;
+    }
+    .login-box {
+        width: 96% !important;
+        border: none !important;
+        box-sizing: unset !important;
+        box-shadow: none !important;
+        position: relative !important;
+        height: 100% !important;
+        }
+
+    #TableSelect{
+        display: none  !important;
+    }
+    .hh .SignOut{
+        display: none  !important;
+    }
+
+    .hh{
+        border: none !important;
+        position: absolute !important;
+    }
+ 
+    h4{
+    display: none;
+    }
+
+    .tabdata{
+        overflow: unset !important;
+        position: absolute !important;
+        padding:none !important;
+        height: 100% !important;
+        border: none !important;
+        page-break-inside: auto !important;
+        
+    }
+    .BA{
+        display: none!important;
+    }
+    thead{
+        position: relative !important;
+        border: 2px solid var(--Row1Color) !important;;
+    } */
+
+ }
+
+html {
+height: 100%;
+}
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background: linear-gradient(var(--FColor), var(--EColor));
+}
+input {
+    border-radius: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: solid 1px var(--Row1Color);
+    padding: 10px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.hh{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 34px;
+    align-items: center;
+    margin-right: 0.8%;
+
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: var(--Width);
+    height: 75%;
+    padding: 1%;
+    transform: translate(-50%, -50%);
+    background-color: var(--loginColor);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: var(--fontZ);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    }
+    .login-box2 {
+        display: flex;
+        flex-direction: column;
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        box-sizing: unset !important;
+        box-shadow:unset !important;
+        border-radius: 0px !important;
+        }
+
+    input , select,button{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button{
+        font-size: var(--fontZ);
+    }
+    h2 {
+        color: var(--Font2Color);
+        text-align: right;
+        text-align: center;
+        margin-top: 4px;
+        }
+    h3 {
+    color: var(--Font2Color);
+    text-align: center;
+    }
+    h4{
+        position: absolute;
+        bottom: -2%;
+        left:calc(50% - 60px );
+        text-align: center;
+        color: var(--Font2Color);
+    }
+.First_Row,.Second_Row{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.Employee_ID_Div{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px var(--Row1Color);
+    justify-content: space-around;
+    height: 36px;
+    padding-right: 5px;
+}
+.Employee_ID_Div input{
+border-radius: 25px;
+border: none;
+background-color: var(--Row1BackColor);
+width: 60%;
+height: 25px;
+text-align: center;
+}
+.Employee_ID_Div label{
+    font-weight: bold;
+    width: 32%;
+    }
+
+.UserName_Div{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content:center;
+    height: 36px;
+    border: solid 1px var(--Row1Color);
+    justify-content: space-around;
+}
+
+.UserName_Div input {
+    width: 75%;
+    text-align: center;
+    font-size: var( --fontX);
+    font-weight: 600;
+    border: none;
+    height: 25px;
+    color: var(--Font3Color);
+    background-color: var(--Row1BackColor);
+    border-radius: 25px;
+}
+.UserName_Div label{
+    font-weight: bold;
+    width: 20%;
+    }
+
+
+.BranchName_Div,.BranchMain_Div,#Branch_name_form div ,#Branch_Main_form div ,#Supplier_form div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 36px;
+    width: 49%;
+    justify-content: space-between;    
+}
+
+
+
+.BranchName_Div select,.BranchMain_Div select,#Branch_name_form  input,#Supplier_form input{
+    width: 52%;
+    height: 25px;
+    background-color: var(--inputBackColor);
+    color: var(--Font3Color);
+    text-align: center;
+}
+.BranchName_Div select option,.BranchMain_Div select option{
+    background-color:rgb(235, 232, 232); 
+}
+.NewBr{
+    width: 17.5%;
+    padding: 4px 0;
+    font-size: var(--fonty);
+    color: var(--Font2Color);
+    border: 1px solid var(--FontColor);
+    font-weight: bolder;
+    background-color: inherit;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.Three_Div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-top: var(--TMargin); */
+}
+
+.Three_Div .Three_Div1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    justify-content: space-evenly;
+ 
+}
+
+.Three_Div .Three_Div3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    
+    border: solid 1px var(--Row1Color);
+}
+.Three_Div .Three_Div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 59%;
+    justify-content: space-between;
+    
+    
+}
+
+.user-box  {
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-around;
+width: var(--Winput);
+height: 44px;
+align-items: center;
+padding-right: 5px;
+}
+
+.user-box label {
+    width: 20%;
+    text-align: center;
+   }
+   .user-box input , .user-box select ,.hh select ,.hh input ,.TableInputMc ,.TableInputMn,.TableInputMa,.TableInputMw , .TableInputMp ,.TableInputMt ,.TableInputMno,
+.TableInputMcS ,.TableInputMnS,.TableInputMaS,.TableInputMwS , .TableInputMpS ,.TableInputMtS ,.TableInputBon,.TableInputMnoS,.LAmounts , .TableInputMcP ,.TableInputMnP,.TableInputGo,.TableInputMaP,.TableInputMwP , .TableInputMpP ,.TableInputMtP ,.TableInputMnoP{
+    width: 70%;
+    font-size: var( --fontX);
+    color: var(--Font3Color);
+    outline: none;
+    background-color: var(--inputBackColor);
+    direction: rtl;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-radius: 25px;
+    }
+    
+    /* .user-box button {
+        width: 20%;
+       } */
+
+.BranchName_Div label,.BranchMain_Div label{
+    padding: 4px 0px;
+    width: 22%;
+}
+#Branch_name_form  label{
+    padding: 4px 5px;
+    width: 22%;
+}
+.Users_Div input{
+    width: 72%; 
+    text-align: center;
+    margin-left:2px
+     
+}
+
+.Users_Div label{
+    text-align: center ;
+    font-size: 16px;
+}
+#Supplier_form label{
+    padding: 4px 5px;
+    width: 24%;
+}
+
+.login-box  label ,#Branch_name_form  label,#Branch_Main_form label #Supplier_form label{
+color: var(--Font2Color);
+transition: 0.5s;
+}
+
+ #Moon, #Sun {
+position: fixed;
+top: 10px;
+left: 12px;
+width: 13%;
+height: 25PX;
+z-index: 1;
+border: none;
+}
+.BA input {
+border: none;
+position: fixed;
+top: 10px;
+left: 12px;
+color: var(--Font3Color);
+width: 13%;
+font-size:var(--fonty) ;
+text-align: center;
+font-weight: 700;
+background-color: var(--inputBackColor);
+border-radius: 25px;
+}
+#StatePro{
+    border: none;
+    position: fixed;
+    top: 10px;
+    left: 2px;
+    color: var(--Font3Color);
+    font-size:var(--fonty) ;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 25px;
+    }
+#LoadingFormBrowser{
+    color: var(--Font2Color);
+    font-size: 100px;
+}
+.SignOut{
+    display: flex;
+    font-size: calc(var(--fontZ) - 1 );
+    font-weight: 600;
+    color: white;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    }
+
+.Buto {
+display: inline-block;
+padding: 6px 0px;
+color: white;
+font-weight: bolder;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: 0.5s;
+border:  transparent  inset 1px;
+background-color: inherit;
+border-radius: 10px;
+width: 150px;
+margin-top: 15px;
+}
+.BB0 .Buto {
+    background-color:rgb(56, 159, 255);
+    }
+
+.Buto a {   
+    font-size: calc(var(--fontZ) + 2 );
+    margin-right: 5px;
+}
+
+.tabdata button:hover,.tabdata label:hover,  .Buto:hover , .NewBr:hover{
+background-color: #d3f6f8 !important;
+color: var(--Font3Color);
+border-radius: 5px;
+box-shadow: 0 0 5px var(--Font2Color), 0 0 25px var(--Font2Color), 0 0 50px var(--Font2Color),
+0 0 100px var(--Font2Color);
+border: var(--Font2Color) solid 1px;
+}
+
+#AmFileTxt,#AmFileSel{
+    width: 80%;
+    height: auto;
+    color: var(--Font3Color);
+    background-color: var(--inputBackColor);
+    border:  var(--Font2Color)  inset 1px;
+    margin-top: 5px;
+} 
+
+.BB{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    height:12%;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.MainButtons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+}
+.MainButtons button ,.Buto{
+    display: flex;
+    padding: 6px 0px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    border:  transparent  inset 1px;
+    background-color: inherit;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+    }
+    .MainButtons button {
+        height: 30%;
+    }
+
+   .MainButtons button {
+        background-color:rgb(56, 159, 255);
+        }
+    
+    .MainButtons button a {   
+        font-size: var(--FontIcon);
+        display: block;
+}
+
+    
+    .MainButtons button:hover ,.SignOut:hover {
+    background-color: #d3f6f8 !important;
+    color: var(--Font3Color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--Font2Color), 0 0 25px var(--Font2Color), 0 0 50px var(--Font2Color),
+    0 0 100px var(--Font2Color);
+    border: var(--Font2Color) solid 1px;
+    }
+.BB0{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 80px;
+    align-items: center;
+}
+
+.BA button{
+border-color: var(--FColor);
+}
+
+#SelectBranch  option{
+    background-color: var(--EColor);
+}
+
+
+.Unshow {display: none; }
+
+.dropdown-content a {
+  color: var(--FontColor);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: var(--EColor);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--Font2Color);
+    color: var(--EColor);
+    
+}
+
+#Branch_name_form div,#Branch_Main_form div,#Supplier_form div{
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+#Branch_name_form input,#Branch_name_form select,#Branch_Main_form input , #Supplier_form input{
+   font-size: calc(var(--fontZ) - 2 );
+    padding: 2px 1px;
+}
+
+#Branch_name_form button, #Supplier_form button{
+height: 80%;
+width: 70%;
+}
+#Branch_name_form .BB0,#Branch_Main_form .BB0,#Supplier_form .BB0{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+#error_Branch_ID,#error_User_ID{
+        margin-left: 1%; 
+        font-size:28px;
+        color:red; 
+        width: 5%;
+}
+#Eye_Password{
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size:25px;
+    color:green; 
+    width: 5%;
+}
+#CustomerBrowser form ,#PurchasesItems ,#SalesBrowser form ,#SalesItems,#EntryBrowser form ,#EntryItems,#AccountBrowser form,#MatsBrowser form{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 92%;
+}
+.tabdata{
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    border: 1px solid  var(--Row1Color);
+    align-items: center;
+    font-size: calc(var(--fontZ) + 2);   
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content:flex-start ;
+    justify-items: center;
+    align-items: flex-start;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 98%;
+    margin-top: 1%;   
+}
+#AddRow1,#AddRow2{
+    width: 100%;
+    background-color: rgb(28, 185, 7);
+}
+  td {
+    border: 1px solid  var(--Row1Color);
+    text-align: center;
+    vertical-align:middle;
+    color:  var(--Font2Color);
+    font-size: var(--fontZ);
+    height: 28px;
+}
+th {
+    color: var(--Font2Color);
+    border: 2px solid var(--Row1Color);
+    background-color: var(--THColor);
+  }
+
+  tr:hover {
+    box-shadow: 0 0 5px var(--Font2Color)inset, 0 0 25px var(--Font2Color)inset;
+    }
+
+#FormCutomerDetails{
+    justify-content: var(--justify);
+}
+  
+  table {
+    width: 100%;
+    border: 3px solid  var(--Row1Color);
+    table-layout: fixed;
+    border-collapse: unset !important;
+    border-spacing: revert !important;
+  }
+
+  .CellRow{
+    background-color:var(--TDColor) ;
+    word-wrap: break-word;
+  }
+  
+  a[class*="fa"] {
+    font-size: calc(var(--fontZ) - 2);
+  }
+
+  .BtnStyle{
+    cursor:pointer;
+    background-Color:red;
+    padding:2px;
+    width:92%;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+  }
+  .BtnStyle1{
+    cursor:pointer;
+    background-Color:orange;
+    padding:2px;
+    width:92%;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+  }
+
+  .NotEnable{
+    background-color: rgba(255, 0, 0, 0.315);
+    color: red;
+  }
+
+
+
