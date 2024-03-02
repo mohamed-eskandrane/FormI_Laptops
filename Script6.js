@@ -28,9 +28,9 @@ function LoadScript() {
         LoadpurchasesWi1();
       }
       let Myusername =localStorage.getItem("User_Name")
-      document.getElementById("Myusername").value=Myusername.value
-      document.getElementById("UserNameP1_Pr").value=Myusername.value;
-      document.getElementById("UserNameP1").value=Myusername.value;
+      document.getElementById("Myusername").value= Myusername;
+      document.getElementById("UserNameP1_Pr").value= Myusername;
+      document.getElementById("UserNameP1").value= Myusername;
     }
   }
 }
