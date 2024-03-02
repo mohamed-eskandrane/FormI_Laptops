@@ -65,6 +65,9 @@ function SignOutUser(){
 }
 function GoToMain(){
   ShowSelectForm("Main");
+    document.getElementById("Myusername").value=localStorage.getItem("User_Name");
+    document.getElementById("UserNameP1_Pr").value=localStorage.getItem("User_Name");
+    document.getElementById("UserNameP1").value=localStorage.getItem("User_Name");
 }
 // **********************Loading*****************
 function LoadUsers(){
