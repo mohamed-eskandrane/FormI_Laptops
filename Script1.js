@@ -169,7 +169,6 @@ function Sign_In(){
     localStorage.setItem("PassWord",DataUsers[User_Index].PassWord);
     localStorage.setItem("UserCode",DataUsers[User_Index].UserCode);
     ShowSelectForm("Main");
-    location.reload();
   };
   }
 }
