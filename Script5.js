@@ -27,7 +27,8 @@ function LoadScript() {
       if(localStorage.getItem("ActiveForm")=="purchasesWi1"){
         LoadpurchasesWi1();
       }
-      let Myusername = document.getElementById("Myusername");
+      let Myusername =localStorage.getItem("User_Name")
+      document.getElementById("Myusername").value=Myusername.value
       document.getElementById("UserNameP1_Pr").value=Myusername.value;
       document.getElementById("UserNameP1").value=Myusername.value;
     }
