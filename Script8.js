@@ -261,7 +261,7 @@ function LoadpurchasesWi(){
   function OnchangeMyinput4(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxt4").textContent = curFiles ;
+    document.getElementById("MyfileTxt4").value = curFiles ;
   }
   function OnchangeMyinput5(myfile){
     if(myfile.value===undefined){return} ; 
@@ -308,7 +308,7 @@ function LoadpurchasesWi1(){
  function OnchangeMyinputp(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxtp").textContent = curFiles ;
+    document.getElementById("MyfileTxtp").value = curFiles ;
   }
   function OnchangeMyinputp1(myfile){
     if(myfile.value===undefined){return} ; 
