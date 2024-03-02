@@ -27,9 +27,9 @@ function LoadScript() {
       if(localStorage.getItem("ActiveForm")=="purchasesWi1"){
         LoadpurchasesWi1();
       }
-      document.getElementById("Myusername").value=localStorage.getItem("User_Name");
-      document.getElementById("UserNameP1_Pr").value=localStorage.getItem("User_Name");
-      document.getElementById("UserNameP1").value=localStorage.getItem("User_Name");
+      let Myusername = document.getElementById("Myusername");
+      document.getElementById("UserNameP1_Pr").value=Myusername.value;
+      document.getElementById("UserNameP1").value=Myusername.value;
     }
   }
 }
@@ -65,9 +65,9 @@ function SignOutUser(){
 }
 function GoToMain(){
   ShowSelectForm("Main");
-    document.getElementById("Myusername").value=localStorage.getItem("User_Name");
-    document.getElementById("UserNameP1_Pr").value=localStorage.getItem("User_Name");
-    document.getElementById("UserNameP1").value=localStorage.getItem("User_Name");
+      let Myusername = document.getElementById("Myusername");
+      document.getElementById("UserNameP1_Pr").value=Myusername.value;
+      document.getElementById("UserNameP1").value=Myusername.value;
 }
 // **********************Loading*****************
 function LoadUsers(){
@@ -167,6 +167,8 @@ function Sign_In(){
   if (Istrue(User_PassWord.value)===true){
     let User_Index = localStorage.getItem("User_Index");
     if(DataUsers[User_Index].IsM=="Yes"){
+    let Myusername = document.getElementById("Myusername");
+    Myusername.value= DataUsers[User_Index].UserName;
     localStorage.setItem("User_Name", DataUsers[User_Index].UserName);
     localStorage.setItem("PassWord",DataUsers[User_Index].PassWord);
     localStorage.setItem("UserCode",DataUsers[User_Index].UserCode);
