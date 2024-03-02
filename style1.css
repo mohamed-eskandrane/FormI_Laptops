@@ -738,6 +738,16 @@ th {
     background-color: rgba(255, 0, 0, 0.315);
     color: red;
   }
-
-
-
+.InputFile{
+    width: 98%;
+    height: 22px;
+    font-size: var(--fontX);
+    color: var(--Font3Color);
+    outline: none;
+    background-color: var(--inputBackColor);
+    direction: rtl;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-radius: 25px;
+}
