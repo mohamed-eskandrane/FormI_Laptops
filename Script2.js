@@ -28,12 +28,11 @@ function LoadScript() {
         LoadpurchasesWi1();
       }
       document.getElementById("Myusername").value=localStorage.getItem("User_Name");
-      
+      document.getElementById("UserNameP1_Pr").value=localStorage.getItem("User_Name");
+      document.getElementById("UserNameP1").value=localStorage.getItem("User_Name");
     }
   }
 }
-
-
 
 function ShowSelectForm(ActiveForm){
   document.getElementById("loginPage").style.display="none";
