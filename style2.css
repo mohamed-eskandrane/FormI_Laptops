@@ -746,7 +746,6 @@ th {
     outline: none;
     background-color: var(--inputBackColor);
     direction: rtl;
-    height: 30px;
     border: none;
     text-align: center;
     border-radius: 25px;
