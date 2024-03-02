@@ -241,22 +241,22 @@ function LoadpurchasesWi(){
  function OnchangeMyinput(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxt").textContent = curFiles ;
+    document.getElementById("MyfileTxt").value = curFiles ;
   }
   function OnchangeMyinput1(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxt1").textContent = curFiles ;
+    document.getElementById("MyfileTxt1").value = curFiles ;
   }
   function OnchangeMyinput2(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxt2").textContent = curFiles ;
+    document.getElementById("MyfileTxt2").value = curFiles ;
   }
   function OnchangeMyinput3(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxt3").textContent = curFiles ;
+    document.getElementById("MyfileTxt3").value = curFiles ;
   }
   function OnchangeMyinput4(myfile){
     if(myfile.value===undefined){return} ; 
@@ -266,31 +266,31 @@ function LoadpurchasesWi(){
   function OnchangeMyinput5(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxt5").textContent = curFiles ;
+    document.getElementById("MyfileTxt5").value = curFiles ;
   }
   function DeleteMyinput(){
     document.getElementById("Myfile").value = '' ;
-    document.getElementById("MyfileTxt").textContent = '' ;
+    document.getElementById("MyfileTxt").value = '' ;
   }
   function DeleteMyinput1(){
     document.getElementById("Myfile1").value = '' ;
-    document.getElementById("MyfileTxt1").textContent = '' ;
+    document.getElementById("MyfileTxt1").value = '' ;
   }
   function DeleteMyinput2(){
     document.getElementById("Myfile2").value = '' ;
-    document.getElementById("MyfileTxt2").textContent = '' ;
+    document.getElementById("MyfileTxt2").value = '' ;
   }
   function DeleteMyinput3(){
     document.getElementById("Myfile3").value = '' ;
-    document.getElementById("MyfileTxt3").textContent = '' ;
+    document.getElementById("MyfileTxt3").value = '' ;
   }
   function DeleteMyinput4(){
     document.getElementById("Myfile4").value = '' ;
-    document.getElementById("MyfileTxt4").textContent = '' ;
+    document.getElementById("MyfileTxt4").value = '' ;
   }
   function DeleteMyinput5(){
     document.getElementById("Myfile5").value = '' ;
-    document.getElementById("MyfileTxt5").textContent = '' ;
+    document.getElementById("MyfileTxt5").value = '' ;
   }
 // **************************purchasesBrowser***********
 function LoadpurchasesWi1(){
@@ -313,49 +313,49 @@ function LoadpurchasesWi1(){
   function OnchangeMyinputp1(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxtp1").textContent = curFiles ;
+    document.getElementById("MyfileTxtp1").value = curFiles ;
   }
   function OnchangeMyinputp2(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxtp2").textContent = curFiles ;
+    document.getElementById("MyfileTxtp2").value = curFiles ;
   }
   function OnchangeMyinputp3(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxtp3").textContent = curFiles ;
+    document.getElementById("MyfileTxtp3").value = curFiles ;
   }
   function OnchangeMyinputp4(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxtp4").textContent = curFiles ;
+    document.getElementById("MyfileTxtp4").value = curFiles ;
   }
   function OnchangeMyinputp5(myfile){
     if(myfile.value===undefined){return} ; 
     let curFiles = myfile.files.item(0).name;
-    document.getElementById("MyfileTxtp5").textContent = curFiles ;
+    document.getElementById("MyfileTxtp5").value = curFiles ;
   }
   function DeleteMyinputp(){
     document.getElementById("Myfilep").value = '' ;
-    document.getElementById("MyfileTxtp").textContent = '' ;
+    document.getElementById("MyfileTxtp").value = '' ;
   }
   function DeleteMyinputp1(){
     document.getElementById("Myfilep1").value = '' ;
-    document.getElementById("MyfileTxtp1").textContent = '' ;
+    document.getElementById("MyfileTxtp1").value = '' ;
   }
   function DeleteMyinputp2(){
     document.getElementById("Myfilep2").value = '' ;
-    document.getElementById("MyfileTxtp2").textContent = '' ;
+    document.getElementById("MyfileTxtp2").value = '' ;
   }
   function DeleteMyinputp3(){
     document.getElementById("Myfilep3").value = '' ;
-    document.getElementById("MyfileTxtp3").textContent = '' ;
+    document.getElementById("MyfileTxtp3").value = '' ;
   }
   function DeleteMyinputp4(){
     document.getElementById("Myfilep4").value = '' ;
-    document.getElementById("MyfileTxtp4").textContent = '' ;
+    document.getElementById("MyfileTxtp4").value = '' ;
   }
   function DeleteMyinputp5(){
     document.getElementById("Myfilep5").value = '' ;
-    document.getElementById("MyfileTxtp5").textContent = '' ;
+    document.getElementById("MyfileTxtp5").value = '' ;
   }
